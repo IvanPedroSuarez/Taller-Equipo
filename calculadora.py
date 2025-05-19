@@ -29,7 +29,10 @@ def main():
 
             elif opcion == 3:
                 print("TODO: Implementar multiplicación")
-                # TODO: Agregar funcionalidad de multiplicación
+                 num1 = float(input("Ingrese el primer número: "))
+                num2 = float(input("Ingrese el segundo número: "))
+                resultado = calculadora.multiplicacion(num1, num2)
+                print(f"Resultado de la multiplicación: {resultado}")
 
             elif opcion == 4:
                 print("TODO: Implementar división")
