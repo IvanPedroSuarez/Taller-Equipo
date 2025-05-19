@@ -30,8 +30,15 @@ def main():
                     print("Error: Por favor ingrese números válidos")
 
             elif opcion == 2:
-                print("TODO: Implementar resta")
-                # TODO: Agregar funcionalidad de resta
+                print("=== RESTA ===")
+            try:
+                num1 = float(input("Ingrese el primer número: "))
+                num2 = float(input("Ingrese el segundo número: "))
+                resultado = num1 - num2
+                print(f"Resultado: {num1} - {num2} = {resultado}")
+            except ValueError:
+                print("Error: Debes ingresar números válidos.")
+
 
             elif opcion == 3:
                 print("TODO: Implementar multiplicación")
