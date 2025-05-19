@@ -18,10 +18,9 @@ def main():
                 print("Opción no válida. Por favor, seleccione una opción del 1 al 5.")
                 continue
 
-            # Aquí los otros miembros del equipo pueden agregar la lógica para cada operación
             if opcion == 1:
-                print("suma")
-               try:
+                print("=== SUMA ===")
+                try:
                     num1 = float(input("Ingrese el primer número: "))
                     num2 = float(input("Ingrese el segundo número: "))
                     resultado = num1 + num2
@@ -31,21 +30,23 @@ def main():
 
             elif opcion == 2:
                 print("=== RESTA ===")
-            try:
-                num1 = float(input("Ingrese el primer número: "))
-                num2 = float(input("Ingrese el segundo número: "))
-                resultado = num1 - num2
-                print(f"Resultado: {num1} - {num2} = {resultado}")
-            except ValueError:
-                print("Error: Debes ingresar números válidos.")
-
+                try:
+                    num1 = float(input("Ingrese el primer número: "))
+                    num2 = float(input("Ingrese el segundo número: "))
+                    resultado = num1 - num2
+                    print(f"Resultado: {num1} - {num2} = {resultado}")
+                except ValueError:
+                    print("Error: Debes ingresar números válidos.")
 
             elif opcion == 3:
-                print("TODO: Implementar multiplicación")
-                 num1 = float(input("Ingrese el primer número: "))
-                num2 = float(input("Ingrese el segundo número: "))
-                resultado = calculadora.multiplicacion(num1, num2)
-                print(f"Resultado de la multiplicación: {resultado}")
+                print("=== MULTIPLICACIÓN ===")
+                try:
+                    num1 = float(input("Ingrese el primer número: "))
+                    num2 = float(input("Ingrese el segundo número: "))
+                    resultado = num1 * num2
+                    print(f"Resultado de la multiplicación: {resultado}")
+                except ValueError:
+                    print("Error: Por favor ingrese números válidos")
 
             elif opcion == 4:
                 print("TODO: Implementar división")
