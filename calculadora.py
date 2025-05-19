@@ -1,24 +1,6 @@
-class Calculadora:
-    def suma(self, a, b):
-        return a + b
-
-    def resta(self, a, b):
-        return a - b
-
-    def multiplicacion(self, a, b):
-        return a * b
-
-    def division(self, a, b):
-        if b != 0:
-            return a / b
-        else:
-            return "Error: No se puede dividir por cero"
-
 def main():
-    calculadora = Calculadora()
-
     while True:
-        print("\n=== CALCULADORA ===")
+        print("\n=== MENÚ CALCULADORA ===")
         print("1. Suma")
         print("2. Resta")
         print("3. Multiplicación")
@@ -36,24 +18,25 @@ def main():
                 print("Opción no válida. Por favor, seleccione una opción del 1 al 5.")
                 continue
 
-            num1 = float(input("Ingrese el primer número: "))
-            num2 = float(input("Ingrese el segundo número: "))
-
+            # Aquí los otros miembros del equipo pueden agregar la lógica para cada operación
             if opcion == 1:
-                resultado = calculadora.suma(num1, num2)
-                print(f"Resultado: {resultado}")
+                print("TODO: Implementar suma")
+                # TODO: Agregar funcionalidad de suma
+
             elif opcion == 2:
-                resultado = calculadora.resta(num1, num2)
-                print(f"Resultado: {resultado}")
+                print("TODO: Implementar resta")
+                # TODO: Agregar funcionalidad de resta
+
             elif opcion == 3:
-                resultado = calculadora.multiplicacion(num1, num2)
-                print(f"Resultado: {resultado}")
+                print("TODO: Implementar multiplicación")
+                # TODO: Agregar funcionalidad de multiplicación
+
             elif opcion == 4:
-                resultado = calculadora.division(num1, num2)
-                print(f"Resultado: {resultado}")
+                print("TODO: Implementar división")
+                # TODO: Agregar funcionalidad de división
 
         except ValueError:
-            print("Error: Por favor, ingrese números válidos")
+            print("Error: Por favor, ingrese un número válido")
 
 if __name__ == "__main__":
     main()
