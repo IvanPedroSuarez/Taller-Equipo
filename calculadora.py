@@ -20,8 +20,14 @@ def main():
 
             # Aquí los otros miembros del equipo pueden agregar la lógica para cada operación
             if opcion == 1:
-                print("TODO: Implementar suma")
-                # TODO: Agregar funcionalidad de suma
+                print("suma")
+               try:
+                    num1 = float(input("Ingrese el primer número: "))
+                    num2 = float(input("Ingrese el segundo número: "))
+                    resultado = num1 + num2
+                    print(f"El resultado de la suma es: {resultado}")
+                except ValueError:
+                    print("Error: Por favor ingrese números válidos")
 
             elif opcion == 2:
                 print("TODO: Implementar resta")
